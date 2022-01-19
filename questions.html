@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Questions</title>
+  </head>
+  <body>
+    <header>
+      <a id="leaderboard"  href="highscores.html">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+      </i></a> 
+      <div id="time">Time left:</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <h2 class="card__header" id="question">Question</h2>
+          <button
+            class="card__btn"
+            id="opt-1"
+            value="0"
+            onclick="handleClick(this.value, this.id)"
+          >
+            1
+          </button>
+          <button
+            class="card__btn"
+            id="opt-2"
+            value="1"
+            onclick="handleClick(this.value, this.id)"
+          >
+            2
+          </button>
+          <button
+            class="card__btn"
+            id="opt-3"
+            value="2"
+            onclick="handleClick(this.value, this.id)"
+          >
+            3
+          </button>
+          <button
+            class="card__btn"
+            id="opt-4"
+            value="3"
+            onclick="handleClick(this.value, this.id)"
+          >
+            4
+          </button>
+        </div>
+      </div>
+      <div id="result"></div>
+      <hr />
+    </main>
+    <script src="assets/questions.js"></script>
+  </body>
+</html>

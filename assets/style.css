@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: Verdana;
+  font-size: 16px;
+  font-style: normal;
+  color: #000000;
+}
+
+header {
+  background-color: #218380;
+  padding: 1rem;
+  color: white;
+}
+
+header #time {
+  float: right;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 80%;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 5px rgb(216, 210, 210);
+  border-radius: 18px;
+}
+
+.card__link {
+  display: inline-block;
+  width: fit-content;
+  background-color: #218380;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card__btn {
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: left;
+  background-color: #218380;
+  border-radius: 12px;
+  color: white;
+}
+
+.card__text_input {
+  padding: 0.75rem;
+}
+
+.card__submit {
+  background-color: #218380;
+  border-radius: 12px;
+  color: white;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.card__btn:hover {
+  opacity: 0.75;
+}
+
+hr {
+  width: 80%;
+}
+
+#result {
+  margin: auto;
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  .card__submit {
+    padding: 0.5rem;
+  }
+  .card__text_input {
+    width: 100px;
+    padding: 0.5rem;
+  }
+}
